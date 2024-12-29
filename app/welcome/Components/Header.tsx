@@ -1,33 +1,32 @@
+import { ClassNames } from "@emotion/react"
 import React from "react"
+import Leftnavbar from "./Leftnavbar"
 
 export default function Header(){
     return(
-        <>
-        <section>
-            <div>
-                 <img src="" alt="logo" />
-            </div>
-            <div>
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Service</a>
-                <a href="">Portfolio</a>
-                <a href="">Blog</a>
-                <a href="">Contact</a>  
-            </div>
-        </section>
-        <section>
-            <div>
-            
-
-            </div>
-            <div>
-
-            </div>
-
-        </section>
-           
-        </>
-        
+        <div className="nav-bar">
+            <section className="navbar-left">
+                <div>
+                    <img src="" alt="logo" />
+                </div>
+                <div>
+                    <Leftnavbar />  
+                </div>
+            </section>
+            <section>
+                <div>
+                    <a href="">Fb</a>
+                    <a href="">In</a>
+                    <a href="">Tw</a>
+                    <a href="">Ln</a>
+                </div>
+                <div>
+                    <button>BUY NOW</button>
+                </div>
+             </section>
+        </div>
     )
 }
+    
+        
+    

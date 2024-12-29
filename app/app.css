@@ -2,7 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
 
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+
+}
+.links{
+    margin-left: 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    
+    
 }
