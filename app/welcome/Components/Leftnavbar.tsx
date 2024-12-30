@@ -2,7 +2,7 @@ import React, {useState} from "react"
 
 export default function Leftnavbar(){
 
-  const [activeLink, setActiveLink] = useState(null);
+  const [activeLink, setActiveLink] = useState(0);
 
   const links = [
     { href: '#', text: 'Home' },
@@ -10,21 +10,22 @@ export default function Leftnavbar(){
     { href: '#', text: 'Service' },
     { href: '#', text: 'Portfolio' },
     { href: '#', text: 'Blog' },
-    { href: '#', text: 'Contact' },
+    { href: '#', text: 'Contacts' },
     
   ];
 
-  const handleLinkClick = (index) => {
+  const handleLinkClick = (index: number) => {
+    console.log("index")
     setActiveLink(index);
   };
 
   return (
-    <ul className="links">
+    <ul className="nav-links">
       {links.map((link, index) => (
-        <li key={link.href}>
+        <li key={link.text}>
           <a
             href={link.href}
-            style={{ color: index === activeLink ? 'blue' : 'black' }}
+            style={{ color: index === activeLink ? 'blue' : 'white' }}
             onClick={() => handleLinkClick(index)}
           >
             {link.text}
