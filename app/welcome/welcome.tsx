@@ -2,10 +2,11 @@ import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
 import Button from '@mui/material/Button';
 import Header from "./Components/Header";
+import Asidecontent from "./Components/Asidecontent";
 
 export function Welcome() {
   return (
-    <div>
+    <div className="App">
       <div className="main-section">
         <Header />
         <div className="main-content">
@@ -27,8 +28,8 @@ export function Welcome() {
                dfdjtkyu;iu'ioogufydstrjytkylu;i;iiugufnhfdstjylkulf
                fdjtykulilj,hfdtrfjgkhh
             </p>
+            <Asidecontent />
           </div>
-
         </div>
 
       </div>  

@@ -15,7 +15,6 @@ export default function Leftnavbar(){
   ];
 
   const handleLinkClick = (index: number) => {
-    console.log("index")
     setActiveLink(index);
   };
 
