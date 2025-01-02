@@ -1,5 +1,11 @@
 import { ClassNames } from "@emotion/react"
 import React from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faMugHot } from '@fortawesome/free-solid-svg-icons';
 import Leftnavbar from "./Leftnavbar"
 
 export default function Header(){
@@ -7,9 +13,12 @@ export default function Header(){
         <div className="nav-bar">
             <section className="navbar-left">
                 <div className="site-logo">
-                    <img src="https://th.bing.com/th?id=OIP.E6-fcGDeuehNrqgvJ-gFHwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
-                     alt="logo" 
-                    />
+                     <FontAwesomeIcon className="site-logo-icon"
+                     icon={faMugHot} 
+                     color="white" 
+                     size="2x"
+                     style={{ backgroundColor: 'transparent' }} />
+                       
                 </div>
                 <div>
                     <Leftnavbar />  
@@ -19,21 +28,35 @@ export default function Header(){
                 <div className="social-media-links">
                     
                     <a href="">
-                        <img src="http://ts3.mm.bing.net/th?id=OIP.YI7Mm10-VXJIHpe2nUIELAHaHu&pid=15.1" alt="Facebook" />
+                        <FontAwesomeIcon className="social-media-imgs"
+                         icon={faFacebookF}
+                         color="white" 
+                         style={{ backgroundColor: 'transparent' }} />
                     </a>
                     <a href="">
-                        <img src="http://ts1.mm.bing.net/th?id=OIP._tVVYYJuM4vHzMb9cz5hbQHaHk&pid=15.1" alt="Facebook" />
+                    <FontAwesomeIcon className="social-media-imgs"
+                        icon={faLinkedinIn} 
+                        color="white" 
+                        style={{ backgroundColor: 'transparent' }} 
+                    />
                     </a>
                     <a href="">
-                        <img src="https://th.bing.com/th/id/OIP.3yiEEUsMl2WzvglZvjrskQHaHa?w=173&h=180&c=7&r=0&o=5&pid=1.7" alt="Facebook" />
+                        <FontAwesomeIcon className="social-media-imgs"
+                        icon={faInstagram} 
+                        color="white" 
+                        style={{ backgroundColor: 'transparent' }} />
                     </a>
                     <a href="">
-                        <img src="http://ts1.mm.bing.net/th?id=OIP.zbPcXa9Yqki-cOH3lhlycAHaHu&pid=15.1" alt="Facebook" />
+                        <FontAwesomeIcon className="social-media-imgs"
+                        icon={faTwitter} 
+                        color="white" 
+                        style={{ backgroundColor: 'transparent' }} />
                     </a>
                     
                 </div>
                 <div className="nav-button">
-                    <button>BUY NOW</button>
+                    <a href=""><button>DOWNLOAD CD</button></a>
+                    
                 </div>
              </section>
         </div>

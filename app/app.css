@@ -29,66 +29,123 @@
 .nav-links > li > a{
     text-decoration: none;
 }
+.nav-links > li > a:active{
+    font-size: inherit;
+}
 .navbar-right{
     display: flex;
     align-items: center;
 
 }
-.site-logo > img{
+.site-logo{
     width: 60px;
+    background-color: transparent;
 }
-.social-media-links > a > img{
+.social-media-imgs{
     width: 20px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .nav-button{
-    margin-left: 10px;
+    margin-left: 40px;
     margin-bottom: 5px;
    
 }
-.nav-button > button{
+.nav-button > a >button{
     background-color: black;
     color: white;
+    border-style: solid;
+    border-width: thin;
+    border-color: white;
+    font-size: 10px;
+    padding: 10px;
 }
 .main-section{
-    background-color: yellow;
-    height: 50%;
+   background-image: url(https://th.bing.com/th/id/OIP.Mn_ubqKn-_a7qnvsGP6ppgHaFL?rs=1&pid=ImgDetMain);
+   background-size: cover;
+    background-position: center center; 
+    width: 100%; 
+    height: 100%; 
 }
 .main-content{
-    margin-left: 300px;
-    padding-top: 55px;
-    padding-bottom: 78px;
+    margin-left: 400px;
+    padding-top: 85px;
+    padding-bottom: 190px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 .main-content >h3{
-   
+   color: white;
     margin-bottom: 0px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.main-content > p{
+    color: white;
+    font-size: 12px;
+}
+.main-content >h1{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0px;
+}
+.main-content >h2{
+    color: red;
+    margin: 0px;
+    font-size: 45px;
+    
 }
 .aside-section{
     display: flex;
     padding-left: 300px;
-    background-color: red;
-    height: 50%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    background-color: rgb(25, 25, 25);
+    padding-top: 55px;
+    padding-bottom: 74px;
+    justify-content: center;
 }
 .aside-image{
-    border-style: solid;
-    color: red;
     margin-right: 30px;
+    box-shadow: 0px 2px 15px 0px
+
+}
+.aside-image > img{
+    width: 300px;
+}
+.aside-text{
+    width: 700px;
 }
 .aside-text > p{
-    width: 40px;
+    
+    color: white;
+    font-size: 20px;
+}
+.aside-text > h2{
+    color: white;
+    font-size: 40px;
 }
 .aside-links{
     display: flex;
     padding-left: 0px;
+    padding-right: 15px;
 }
 .aside-links > li{
     list-style: none;
     display: flex;
-    margin-right: 5px;
+    margin-right: 28px;
+    font-size: 20px;
+}
+.aside-link-text > p{
+    color: white;
+    max-width: 50%;
+   word-wrap: break-word;
+  
+}
+.aside-side-note{
+    width: 80%;
 }
 body{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
