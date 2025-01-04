@@ -55,7 +55,7 @@ export default function Header(){
                     
                 </div>
                 <div className="nav-button">
-                    <a href=""><button>DOWNLOAD CD</button></a>
+                    <a href=""><button>DOWNLOAD CV</button></a>
                     
                 </div>
              </section>

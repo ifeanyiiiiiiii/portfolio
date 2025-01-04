@@ -20,7 +20,7 @@ export function Welcome() {
         <div className="aside-image">
           <img src="https://th.bing.com/th/id/OIF.1TGeC8ucJMpx6g5VpKnN4A?w=128&h=220&c=7&r=0&o=5&pid=1.7"  alt="picture of me" />
         </div>
-        <div>
+        <div className="aside-content">
           <div className="aside-text">
             <h2>About me</h2>
             <p>Highly motivated and creative Developer

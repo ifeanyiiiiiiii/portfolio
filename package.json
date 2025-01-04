@@ -9,6 +9,11 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mui/material": "^6.3.0",
     "@react-router/node": "^7.1.1",
     "@react-router/serve": "^7.1.1",
     "isbot": "^5.1.17",
@@ -17,6 +22,7 @@
     "react-router": "^7.1.1"
   },
   "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@react-router/dev": "^7.1.1",
     "@types/node": "^20",
     "@types/react": "^19.0.1",

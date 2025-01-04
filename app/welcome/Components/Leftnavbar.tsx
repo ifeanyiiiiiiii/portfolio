@@ -24,7 +24,7 @@ export default function Leftnavbar(){
         <li key={link.text}>
           <a
             href={link.href}
-            style={{ color: index === activeLink ? 'blue' : 'white' }}
+            className={activeLink === index ? 'active' : ''}
             onClick={() => handleLinkClick(index)}
           >
             {link.text}

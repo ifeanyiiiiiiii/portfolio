@@ -28,10 +28,15 @@
 }
 .nav-links > li > a{
     text-decoration: none;
+    color: white;
 }
-.nav-links > li > a:active{
-    font-size: inherit;
+.nav-links > li > a:hover{
+    color: rgb(212, 114, 114);
 }
+.nav-links > li > a.active{
+    color: red;
+}
+
 .navbar-right{
     display: flex;
     align-items: center;
@@ -103,6 +108,13 @@
     padding-top: 55px;
     padding-bottom: 74px;
     justify-content: center;
+   
+    
+    @media (max-width: 768px) {
+        background-color: red;
+       width: fit-content;
+        
+    }
 }
 .aside-image{
     margin-right: 30px;
@@ -114,6 +126,9 @@
 }
 .aside-text{
     width: 700px;
+    display: flex;
+    flex-direction: column;
+    
 }
 .aside-text > p{
     
@@ -135,6 +150,11 @@
     margin-right: 28px;
     font-size: 20px;
 }
+.aside-links > li > a{
+    text-decoration: none;
+    position: relative;
+}
+
 .aside-link-text > p{
     color: white;
     max-width: 50%;
@@ -148,4 +168,28 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
+.App{
+    display: flex;
+    flex-direction: column;
+}
+.aside-content{
+    display: flex;
+    flex-direction: column;
+}
+.underline{
+  position: absolute; 
+  top: 25px;
+  bottom: 0; 
+  left: 0; 
+  width: 25px; 
+  height: 2px; 
+  background-color: white; 
+  transition: width 0.3s ease-in-out; 
+  
+}
+.underline.active {
+    width: 100%; 
+    background-color: red;
+  }

@@ -34,10 +34,13 @@ export default function Asidecontent(){
           <li key={link.text}>
             <a
               href={link.href}
-              style={{ color: index === activeLink ? 'blue' : 'white' }}
+              style={{color: index === activeLink ? 'red' : 'white' ,}}
               onClick={(event) => handleLinkClick(index ,event)}
             >
               {link.text}
+              <span
+                className={activeLink === index ? 'underline active' : 'underline'}
+              />
             </a>
           </li>
         ))}
