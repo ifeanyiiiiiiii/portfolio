@@ -2,10 +2,17 @@
 .nav-bar{
     display: flex;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     align-items: center;
     text-align: center;
+    @media (max-width: 575px) {
+        
+       
+       padding-left: 0.75rem;
+       padding-right: 0.75rem;
+         
+     }
    
 
 }
@@ -15,20 +22,38 @@
 
 }
 .nav-links{
-    margin-left: 20px;
+    margin-left: 1.25rem;
     align-items: center;
     text-align: center;
     display: flex;
+    @media (max-width: 575px) {
+        
+       
+       margin-left: 0px
+         
+     }
 
 }
 .nav-links > li{
-    margin-right: 10px;
+    margin-right: 0.625rem;
     list-style: none;
+    @media (max-width: 575px) {
+        
+       
+        margin-right: 0.19rem;
+         
+     }
     
 }
 .nav-links > li > a{
     text-decoration: none;
     color: white;
+    @media (max-width: 575px) {
+        
+       
+        font-size:0.9rem;
+         
+     }
 }
 .nav-links > li > a:hover{
     color: rgb(212, 114, 114);
@@ -47,22 +72,22 @@
     background-color: transparent;
 }
 .social-media-imgs{
-    width: 20px;
-    margin-left: 20px;
+    width: 1.25rem;
+    margin-left:1.25rem;
 }
 .nav-button{
-    margin-left: 40px;
-    margin-bottom: 5px;
+    margin-left: 2.5rem;
+    margin-bottom: 0.3125rem;
    
 }
-.nav-button > a >button{
+.nav-button  >button{
     background-color: black;
     color: white;
     border-style: solid;
     border-width: thin;
     border-color: white;
-    font-size: 10px;
-    padding: 10px;
+    font-size: 0.625rem;
+    padding: 0.625rem;
 }
 .main-section{
    background-image: url(https://th.bing.com/th/id/OIP.Mn_ubqKn-_a7qnvsGP6ppgHaFL?rs=1&pid=ImgDetMain);
@@ -70,62 +95,95 @@
     background-position: center center; 
     width: 100%; 
     height: 100%; 
+    flex: 1
 }
 .main-content{
-    margin-left: 400px;
-    padding-top: 85px;
-    padding-bottom: 190px;
+    margin-left: 26.25rem;
+    padding-top: 5.312rem;
+    padding-bottom: 11.875rem;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    @media (max-width: 1346px) {
+       
+       width: fit-content;
+       justify-content: center;
+       margin-left: 15rem;
+        
+    }
+    @media (max-width: 1053px) {
+        
+       width: fit-content;
+       margin-left: 7rem;
+        
+    }
 }
 .main-content >h3{
    color: white;
     margin-bottom: 0px;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 1.563rem;
+    @media (max-width: 575px) {
+        
+       
+        font-size: 0.75rem;
+         
+     }
+
 }
 .main-content > p{
     color: white;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 .main-content >h1{
     color: white;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3.125rem;
     margin: 0px;
+    @media (max-width: 575px) {
+        
+       
+        font-size:1.5rem;
+         
+     }
 }
 .main-content >h2{
     color: red;
     margin: 0px;
-    font-size: 45px;
+    font-size: 2.813rem;
+    @media (max-width: 575px) {
+        
+       
+        font-size:1.5rem;
+         
+     }
     
 }
 .aside-section{
     display: flex;
-    padding-left: 300px;
+    padding-left: 18.75rem;
     background-color: rgb(25, 25, 25);
-    padding-top: 55px;
-    padding-bottom: 74px;
+    padding-top: 3.44rem;
+    padding-bottom: 4.625rem;
     justify-content: center;
+    flex: 1
    
     
-    @media (max-width: 768px) {
-        background-color: red;
-       width: fit-content;
-        
-    }
+   
 }
 .aside-image{
-    margin-right: 30px;
+    margin-right: 1.875rem;
     box-shadow: 0px 2px 15px 0px
+    
+    
 
 }
 .aside-image > img{
-    width: 300px;
+    width: 18.75rem;
+    
 }
 .aside-text{
-    width: 700px;
+    width: 43.75rem;
     display: flex;
     flex-direction: column;
     
@@ -133,22 +191,22 @@
 .aside-text > p{
     
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .aside-text > h2{
     color: white;
-    font-size: 40px;
+    font-size:2.5rem;
 }
 .aside-links{
     display: flex;
     padding-left: 0px;
-    padding-right: 15px;
+    padding-right: 0.94rem;
 }
 .aside-links > li{
     list-style: none;
     display: flex;
-    margin-right: 28px;
-    font-size: 20px;
+    margin-right: 1.75rem;
+    font-size: 1.25rem;
 }
 .aside-links > li > a{
     text-decoration: none;
@@ -173,17 +231,19 @@ body{
 .App{
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 .aside-content{
     display: flex;
     flex-direction: column;
+    
 }
 .underline{
   position: absolute; 
-  top: 25px;
+  top: 1.563rem;
   bottom: 0; 
   left: 0; 
-  width: 25px; 
+  width:1.563rem; 
   height: 2px; 
   background-color: white; 
   transition: width 0.3s ease-in-out; 
@@ -192,4 +252,37 @@ body{
 .underline.active {
     width: 100%; 
     background-color: red;
+  }
+  .left-navbar {
+    display: flex; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .left-navbar.mobile {
+    flex-direction: column; 
+  }
+  
+  .left-navbar.mobile .nav-links {
+    display: none; 
+  }
+  
+  .left-navbar.mobile .nav-links.open {
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .nav-links a.active {
+    /* Styles for active links (e.g., color, background) */
+    color: blue; 
+    font-weight: bold; 
+  }
+  
+  .menu-button {
+    display: none; /* Hide the button on larger screens */
+  }
+  
+  .left-navbar.mobile .menu-button {
+    display: block; /* Show the button on smaller screens */
   }
